@@ -1,0 +1,164 @@
+header{
+  background-color: firebrick;
+  height: 133px;
+  padding: 10px;
+}
+#lvlag{
+  float: left;
+}
+#titel{
+   color: gold;
+   text-align: center;
+}
+#rvlag{
+  transform: scaleX(-1);
+   float: right;
+}
+footer{
+  background-color: antiquewhite;
+  height: 50px;
+}
+#ondertitel{
+  background-color: crimson;
+  color: darkslategrey;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h4{
+  color: blue;
+}
+#weetjes{
+  background-color: crimson;
+  color: darkslategrey;
+}
+#tabletitle{
+  background-color: red;
+  text-align: center;
+}
+#hoofdstad{
+  background-color: darkred;
+  text-align: center;
+}
+#hoofdstad b{
+  background-color: mistyrose;
+}
+#vlag{
+  background-color: mistyrose;
+  padding: 10px;
+  }
+#provincie{
+  background-color: firebrick;
+  text-align: center;
+}
+#provincie b{
+  background-color: antiquewhite;
+}
+#kerk{
+  background-color: antiquewhite;
+  padding: 10px;
+}
+#oppervlakte{
+  background-color: linen;
+  text-align: center;
+}
+#oppervlakte b{
+  background-color: crimson;
+}
+#schaap{
+  background-color: crimson;
+  padding: 10px;
+}
+#economie{
+  background-color: beige;
+  text-align: center;
+  }
+#economie b{
+  background-color: red;
+}
+#haan{
+  background-color: red;
+  padding: 10px;
+}
+#hertogdom{
+  background-color: indianred;
+  text-align: center;
+}
+#hertogdom b{
+  background-color: lavenderblush;
+}
+#weide{
+  background-color: lavenderblush;
+  padding: 10px;
+}
+#veghel{
+  background-color: lightcoral;
+  text-align: center;
+}
+#veghel b{
+  background-color: oldlace;
+}
+#cuijk{
+  background-color: oldlace;
+  padding: 10px;
+}
+#maashorst{
+  background-color: seashell;
+  text-align: center;
+}
+#maashorst b{
+  background-color: salmon;
+}
+#kasteel{
+  background-color: salmon;
+  padding: 10px;
+}
+#regio{
+  background-color: ghostwhite;
+  text-align: center;
+}
+#regio b{
+  background-color: darksalmon;
+}
+#bos{
+  background-color: darksalmon;
+  padding: 10px;
+}
+#tablefoot{
+  background-color: mediumblue;
+  text-align: center;
+  color: orange;
+}
+a:hover{
+  color: lime;
+}
+#impressie{
+  background-color: crimson;
+  color: darkslategrey;
+}
+#impressieboven{
+  padding: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#impressieseconds{
+  padding: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#impressietop{
+  padding: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#meeuwis{
+  padding: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
