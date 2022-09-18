@@ -20,7 +20,7 @@ footer{
 }
 #ondertitel{
   background-color: crimson;
-  color: darkslategrey;
+  color: snow;
 }
 img{
   display: block;
@@ -37,8 +37,6 @@ h4{
 #wistudat {
   background-color: crimson;
   color: ghostwhite;
-  float: right;
-  text-align: center;
 }
 #tabletitle{
   background-color: red;
