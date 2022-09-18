@@ -35,9 +35,11 @@ h4{
   color: aliceblue;
 }
 #wistudat {
+  display: block;
+  margin: auto;
   background-color: crimson;
   color: ghostwhite;
-  float: right;
+
 }
 #tabletitle{
   background-color: red;
