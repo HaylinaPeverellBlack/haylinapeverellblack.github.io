@@ -39,6 +39,7 @@ aside{
   margin: auto;
   background-color: maroon;
   color: ghostwhite;
+  float: right;
 }
 #tabletitle{
   background-color: red;
