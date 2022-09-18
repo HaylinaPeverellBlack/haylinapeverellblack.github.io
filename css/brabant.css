@@ -34,12 +34,14 @@ h4{
   background-color: crimson;
   color: aliceblue;
 }
-#wistudat {
+#wistudat{
   display: block;
   margin: auto;
-  background-color: crimson;
+  background-color: maroon;
   color: ghostwhite;
-
+}
+#wistudattitel{
+  color: aliceblue;
 }
 #tabletitle{
   background-color: red;
