@@ -34,6 +34,9 @@ h4{
   background-color: crimson;
   color: aliceblue;
 }
+aside {
+  display: block;
+}
 #tabletitle{
   background-color: red;
   text-align: center;
