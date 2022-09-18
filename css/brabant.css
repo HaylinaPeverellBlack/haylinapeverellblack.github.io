@@ -17,10 +17,6 @@ header{
   transform: scaleX(-1);
    float: right;
 }
-footer{
-  background-color: antiquewhite;
-  height: 50px;
-}
 #ondertitel{
   background-color: crimson;
   color: snow;
@@ -178,4 +174,9 @@ a:hover{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+footer{
+  background-color: darkred;
+  color: antiquewhite;
+  height: 50px;
 }
