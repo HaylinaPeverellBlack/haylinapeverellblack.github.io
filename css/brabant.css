@@ -41,6 +41,9 @@ aside{
   color: ghostwhite;
   float: right;
 }
+aside .h4{
+  color: aliceblue;
+}
 #tabletitle{
   background-color: red;
   text-align: center;
