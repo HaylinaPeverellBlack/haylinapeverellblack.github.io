@@ -37,11 +37,12 @@ h4{
 aside{
   display: block;
   margin: auto;
+  width: 250px;
   background-color: maroon;
   color: ghostwhite;
   float: right;
 }
-aside .h4{
+#wistudat{
   color: aliceblue;
 }
 #tabletitle{
