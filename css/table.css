@@ -1,0 +1,103 @@
+#tabletitle{
+  background-color: red;
+  text-align: center;
+}
+
+#hoofdstad{
+  background-color: darkred;
+  text-align: center;
+}
+#hoofdstad b{
+  background-color: mistyrose;
+}
+#vlag{
+  background-color: mistyrose;
+  padding: 10px;
+  }
+#provincie{
+  background-color: firebrick;
+  text-align: center;
+}
+#provincie b{
+  background-color: antiquewhite;
+}
+#kerk{
+  background-color: antiquewhite;
+  padding: 10px;
+}
+#oppervlakte{
+  background-color: linen;
+  text-align: center;
+}
+#oppervlakte b{
+  background-color: crimson;
+}
+#schaap{
+  background-color: crimson;
+  padding: 10px;
+}
+#economie{
+  background-color: beige;
+  text-align: center;
+  }
+#economie b{
+  background-color: red;
+}
+#haan{
+  background-color: red;
+  padding: 10px;
+}
+#hertogdom{
+  background-color: indianred;
+  text-align: center;
+}
+#hertogdom b{
+  background-color: lavenderblush;
+}
+#weide{
+  background-color: lavenderblush;
+  padding: 10px;
+}
+#veghel{
+  background-color: lightcoral;
+  text-align: center;
+}
+#veghel b{
+  background-color: oldlace;
+}
+#cuijk{
+  background-color: oldlace;
+  padding: 10px;
+}
+#maashorst{
+  background-color: seashell;
+  text-align: center;
+}
+#maashorst b{
+  background-color: salmon;
+}
+#kasteel{
+  background-color: salmon;
+  padding: 10px;
+}
+#regio{
+  background-color: ghostwhite;
+  text-align: center;
+}
+#regio b{
+  background-color: darksalmon;
+}
+#bos{
+  background-color: darksalmon;
+  padding: 10px;
+}
+
+#tablefoot{
+  background-color: mediumblue;
+  text-align: center;
+  color: orange;
+}
+
+a:hover{
+  color: lime;
+}
