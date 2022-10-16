@@ -1,5 +1,7 @@
 nav {
 	background-color: #006400;
+	margin: 0;
+	padding: 0;
 }
 
 nav ul {
@@ -16,6 +18,7 @@ nav ul li {
 
 nav a {
 	display: block;
+	position: relative;
 	padding: 0 10px;
 	color: #F0FFFF;
 	font-size: 20px;
@@ -25,7 +28,7 @@ nav a {
 
 nav a:hover {
 	background-color: #2E8B57;
-    color: #F0FFFF;
+  color: #F0FFFF;
 }
 
 /* Fisrt level Dropdown */
@@ -56,4 +59,15 @@ nav ul ul {
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
 	display:inherit;
+}
+
+/* To make the navbar stick to top op page. */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*
+.sticky + .content {
+  padding-top: 100px;
 }
