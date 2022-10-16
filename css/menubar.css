@@ -1,0 +1,29 @@
+nav {
+	z-index: 1; /* index voor overlap van menu */
+	margin: 0; /* geen marge */
+}
+nav ul { list-style-type: none; } /* haal de punten weg */
+nav ul:first-child {
+	padding: 0; /* ruimte voor eerste item kleiner */
+}
+nav ul:first-child > li {
+	display: inline-block; /* achter elkaar */
+	padding: 0.4rem .6rem 0 .6rem ; /* padding hoofdmenu, spaties tussen menu */
+}
+nav ul > li > ul {
+	display: none; /* hide ul in li */
+	width: auto;
+	position: absolute;
+	margin: 0.5rem 0;
+	margin: 0 1rem; padding: 1rem; /* ruimte om menu maken */
+	z-index: 2;	/* plaats over menu */
+	background-color: lightgray; /* niet transparant voor leesbaarheid */
+	border: solid; /* mooi zwart randje */
+}
+nav ul > li:hover > ul {
+	display: block; /* display block on hover */
+}
+
+/* lists */
+ul { padding-top: 0rem; }
+li { margin-bottom: 0.5rem; }

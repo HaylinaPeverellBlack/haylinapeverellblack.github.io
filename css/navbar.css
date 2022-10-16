@@ -1,0 +1,59 @@
+nav {
+	background-color: #006400;
+}
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+
+nav ul li {
+	display: inline-block;
+	background-color: #006400;
+	}
+
+nav a {
+	display: block;
+	padding: 0 10px;
+	color: #F0FFFF;
+	font-size: 20px;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #2E8B57;
+    color: #F0FFFF;
+}
+
+/* Fisrt level Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more levels	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	left:170px;
+}
+
+li > a:after { content:  '▼'; }
+li > a:only-child:after { content: ''; }
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 60px; /* the height of the main nav */
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}

@@ -1,0 +1,51 @@
+html,{
+    height: 100%;
+    background-color: #F0FFFF;
+}
+
+body{
+  position: relative;
+  margin: auto;
+  font-family: 'Roboto';
+  font-size: 12pt;
+  padding: 3.0rem 0.6rem 0;
+  overflow-x: hidden;
+  background: #F0FFFF;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    color: #003300;
+    text-align: center;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2, h3{
+    margin: 0;
+    padding: 0;
+    color: #003300;
+}
+
+p {
+    line-height: 180%;
+    margin: .6em 0;
+}
+
+.container{
+    /* Set width of container to
+        1200px and align center */
+    margin: 0px auto;
+    width: 1200px;
+}
+
+footer{
+  padding: 10px;
+  background-color: #006400;
+  color: #F0FFFF;
+}
