@@ -7,6 +7,7 @@
     <meta name="author" content="Inge Rooderkerken">
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="css/tables.css" type="text/css">
     <style media="screen"></style>
     <title>Contactform</title>
   </head>
@@ -15,7 +16,7 @@
     <header>
       <nav class="sticky" id="home">
         <ul>
-          <li><a class="icon" href="index.html"><img src="img/homewhite.png" alt="home" width="35px" height="35px"></a></li>
+          <li><a class="icon" href="index.html"><img src="img/homewhite.png" alt="home" width="35" height="35"></a></li>
           <li><a href="index.html#title">Personal</a>
             <ul>
               <li><a href="index.html#biography">Biography</a>
@@ -24,6 +25,7 @@
                   <li><a href="index.html#early">Early life</a></li>
                   <li><a href="index.html#career">Career</a></li>
                   <li><a href="index.html#writing">Writing</a></li>
+                  <li><a href="index.html#arms">Coat of Arms</a></li>
                 </ul>
               </li>
               <li><a href="index.html#Alzheimer">Alzheimer's Disease</a>
@@ -37,8 +39,7 @@
           <li><a href="mijncv.html#cv">Resume</a>
             <ul>
               <li><a href="mijncv.html#bibliography">Bibliography</a></li>
-              <li><a href="mijncv.html#cinemagraphy">Cinemagraphy</a></li>
-              <li><a href="mijncv.html#collected">collaborations</a></li>
+              <li><a href="mijncv.html#collaborations">Collaborations</a></li>
               <li><a href="mijncv.html#awards">Awards</a></li>
             </ul>
           </li>
@@ -51,11 +52,66 @@
 
     <!-- NOTE: header with name -->
 
-    <!-- NOTE: side menu for the subpages -->
+    <!-- NOTE:navbar for the subpages -->
 
     <!-- NOTE: contactform for contactperson author-->
 
     <!-- NOTE: footer with link to wikipediapage -->
 
+    <!-- NOTE: check css for table width, border, etc. -->
+
+    <!-- NOTE: copyrights -->
+
+    <p>Let us know your questions, suggestions en concerns by filling out the contact below.</p>
+
+    <form method="post" action="https://formspree.io/f/xeqnyyog">
+      <table class="four">
+        <tbody>
+          <tr>
+            <td><b>Name:</b></td>
+            <td><input type="text" name="last" placeholder="Full name" required></td>
+          </tr>
+          <tr>
+            <td><b>E-mail:</b></td>
+            <td><input type="email" name="mail" placeholder="example@provider.com" required></td>
+          </tr>
+          <tr>
+            <td><b>Phone number:</b></td>
+            <td><input type="tel" name="phone" placeholder="(+00)12-3456789"></td>
+          </tr>
+          <tr>
+            <td><b>Age:</b></td>
+            <td><input type="number" name="age" value="18" min="1" max="99"></td>
+          </tr>
+          <tr>
+            <td><b>Message subject:</b></td>
+            <td>
+              <select name="subject">
+                <option>Choose a subject</option>
+                <option>Career</option>
+                <option>Ilness</option>
+                <option>Discworld</option>
+                <option>Books</option>
+                <option>Copyrights</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Your message:</b></td>
+            <td><textarea name="message" maxlength="1500" placeholder="Type your message here..." required></textarea></td>
+          </tr>
+          <tr>
+            <td><b>&nbsp;</b></td>
+            <td>
+              <button name="send">Send</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+    <footer>For more information look <a href="https://en.wikipedia.org/wiki/Terry_Pratchett" target="_blank">here</a> at Wikipedia.<br>
+      <a>&copy; Copyright 2022: Wikipedia</a>
+    </footer>
   </body>
 </html>

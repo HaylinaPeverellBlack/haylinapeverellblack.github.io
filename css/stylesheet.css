@@ -4,8 +4,6 @@ html,{
 }
 
 body{
-  position: relative;
-  margin: auto;
   font-family: 'Roboto';
   font-size: 12pt;
   padding: 3.0rem 0.6rem 0;
@@ -13,23 +11,54 @@ body{
   background: #F0FFFF;
 }
 
+body > article{
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 h1{
-    margin: 0;
-    padding-top: 70px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    padding: 5px;
     color: #003300;
     text-align: center;
 }
 
-img{
+p{
+  display: block;
+  text-align: center;
+}
+
+.terry{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
 }
 
 h2, h3{
-    margin: 0;
-    padding: 0;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    padding: 5px;
     color: #003300;
+    text-align: center;
+}
+
+.coat{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+
+.top{
+  display: block;
+  text-align: right;
+  margin-top: 1px;
+  margin-bottom: 2px;
 }
 
 p {
@@ -37,15 +66,12 @@ p {
     margin: .6em 0;
 }
 
-.container{
-    /* Set width of container to
-        1200px and align center */
-    margin: 0px auto;
-    width: 1200px;
-}
-
 footer{
-  padding: 10px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 20%;
   background-color: #006400;
   color: #F0FFFF;
+  text-align: left;
 }
