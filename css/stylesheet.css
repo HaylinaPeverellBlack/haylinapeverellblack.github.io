@@ -17,17 +17,28 @@ body > article{
   margin-right: 20%;
 }
 
+article{
+  background-color: #c8e6c9;
+  padding: 5px;
+}
+
 h1{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 1px;
     margin-bottom: 2px;
-    padding: 5px;
     color: #003300;
     text-align: center;
+    background-color: #c8e6c9;
+    padding: 5px;
 }
 
 p{
   display: block;
   text-align: center;
+  padding: 5px;
+  background-color: #c8e6c9;
 }
 
 .terry{
@@ -39,6 +50,9 @@ p{
 }
 
 h2, h3{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 1px;
     margin-bottom: 5px;
     padding: 5px;
@@ -62,14 +76,17 @@ h2, h3{
 }
 
 p {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     line-height: 180%;
-    margin: .6em 0;
+    background-color: #c8e6c9;
 }
 
 footer{
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 5px;
   padding-left: 20%;
   background-color: #006400;
   color: #F0FFFF;

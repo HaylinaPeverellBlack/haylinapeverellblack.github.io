@@ -48,7 +48,9 @@ tfoot{
 }
 
 .two{
+  table-layout: fixed;
   width: 100%;
+  white-space: nowrap;
 }
 
 .two th, .two tr, .two td{
@@ -80,8 +82,12 @@ tfoot{
 }
 
 .four{
-  width: 600px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
   border: 0;
+  background-color: #c8e6c9;
+  text-align: center;
 }
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select, button{
