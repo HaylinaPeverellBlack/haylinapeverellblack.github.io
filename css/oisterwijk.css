@@ -1,154 +1,148 @@
-@media only screen and (max-width: 600px){
+/* small screen, fall back to default */
+@media only screen and (max-width: 768px){
   [class*="col-"]{
       width: 100%;
       float: none;
   }
-
  body{
     background-color: black;
   }
-
-  .col-2{
-    padding-top: 65px;
-  }
-
-  /* .facts{
-    padding: 5px;
-    margin: 10px;
-  } */
-
-  img{
-    float: left;
-    max-width: 100%;
-    margin: 0 1rem 0 1rem;
-  }
-
-  .main{
-    max-width: 600px;
-    padding: 5px;
-    margin: 10px;
-  }
-
-  .end{
-    max-width: 550px;
-    padding: 5px;
-    margin: 10px;
-    min-height: 100%;
+  img {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  [class*="col-"] {
-    float: left;
-    padding: 5px;
-    margin: 10px;
-    padding-top: 45px;
-    height: 100%;
-  }
+/*  common */
 
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-html, body{
+html,
+body {
+  color: #212121;
   height: 100%;
+  line-height: 1.4;
+  background-color: black;
 }
 
-.row{
-  height: 100%;
-  float: left;
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
 }
 
-.header_image{
+h2,h3 {
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 1.75rem;
+}
+
+h1,h2,h3,{
+  margin: 10px;
+}
+
+p {
+  padding: 5px;
+  margin: 10px;
+}
+
+img {
+  max-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+article {
+  background-color: #80cbc4;
+  padding: 5px;
+  margin: 10px;
+}
+
+footer {
+  background-color: #c8e6c9;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  height: 25px;
+
+}
+
+.header {
+  background-color: #c8e6c9;
+  text-align: center;
+  width: 100%;
+  height: 75px;
+}
+
+.header_image {
   background-image: url(../img/centrum.jpeg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.header{
-  width: 100%;
-  height: 75px;
-  background-color: #c8e6c9;
-  text-align: center;
-  position: fixed;
-  top: 0;.
-}
-
-h1{
-  font-family: "Brush Script MT", cursive;
-  font-size: 2.5rem;
-  padding: 5px;
-  margin: 10px;
-}
-
-h2, h3{
-  font-family: "Lucida Handwriting", cursive;
-  padding: 5px;
-  margin: 10px;
-}
-
-.facts{
+.facts {
   background-color: #004d40;
   color: snow;
-  text-align: left;
-  height:761px;
-  float: left;
-  padding: 5px;
-  margin: 10px;
-  margin-right: 25px;
 }
 
-.main{
-  background-color: #80cbc4;
-  color: #212121;
-  text-align: left;
-  float: left;
-  overflow: auto;
-  padding: 5px;
-  margin: 10px;
+/* large screen */
+
+@media only screen and (min-width: 1200px) {
+
+  html,
+  body {
+    background-color: aliceblue;
+  }
+
+ [class*="col-"] {
+   float: left;
+   padding-top: 5px;
+   height: 100%;
+ }
+
+.col-2 {width: 8.33%;}
+.col-3 {width: 16.66%;}
+.col-4 {width: 25%;}
+.col-5 {width: 33.33%;}
+.col-6 {width: 41.66%;}
+.col-7 {width: 50%;}
+.col-8 {width: 58.33%;}
+.col-9 {width: 66.66%;}
+.col-10 {width: 75%;}
+.col-11 {width: 83.33%;}
+.col-12 {width: 91.66%;}
+.col-13 {width: 100%;}
+
+
+  footer {
+    bottom: 0;
+  }
+
+  .header {
+    top: 0;
+  }
+
+  .content {
+    padding-top: 75px;
+  }
+
+  .end {
+    padding-bottom: 30px;
+  }
+
+  article {
+    float: left;
+  }
+
+  img {
+    max-width: 60%;
+    float: right;
+    display: inline;
+    margin: 0 1rem 0 1rem;
+
+
+  }
 }
 
-p{
-  padding: 5px;
-  margin: 10px;
-}
-
-img{
-  float: right;
-  width: 300px;
-  margin: 0 1rem 0 1rem;
-}
-
-.end{
-  background-color: #80cbc4;
-  color: #212121;
-  text-align: left;
-  float: left;
-  width: 969.75px;
-  padding: 5px;
-  margin: 10px;
-  max-height: 500px;
-  padding-bottom: 25px;
-}
-
-footer{
-  display: block;
-  width: 100%;
-  height: 25px;
-  background-color: #c8e6c9;
-  text-align: center;
-  padding: 5px;
-  bottom: 0;
-  position: fixed;
-}
-}
+/* end large screen */

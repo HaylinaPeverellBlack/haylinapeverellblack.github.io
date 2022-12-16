@@ -1,0 +1,18 @@
+/* small screen, fall back to default */
+@media only screen and (max-width: 768px){
+  [class*="col-"]{
+      width: 100%;
+      float: none;
+  }
+ body{
+    background-color: black;
+  }
+  img { /* images center no text around */
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+} /* end small screen */
+
