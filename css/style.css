@@ -1,15 +1,11 @@
 /* small screen, fall back to default */
 @media only screen and (max-width: 576px){
 
- body{
-    background-color: maroon;
+  .container{
+    max-width: 85%;
   }
 
-.container{
-  max-width: 85%;
-}
-
-.col-sm-4  img {
+  .col-sm-4  img {
     max-width: 60%;;
     display: block;
     margin-left: auto;
@@ -46,6 +42,7 @@ p {
 
 form{
   text-align: left;
+  padding-bottom: 10px;
 }
 
 .col-sm-4 img {
