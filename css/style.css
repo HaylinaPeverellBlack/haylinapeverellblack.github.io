@@ -40,6 +40,17 @@ p {
   margin: 10px;
 }
 
+ul{
+  width: 30%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li{
+  text-align: left;
+}
+
 form{
   text-align: left;
   padding-bottom: 10px;
