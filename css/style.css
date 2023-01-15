@@ -1,0 +1,59 @@
+/* small screen, fall back to default */
+@media only screen and (max-width: 767px){
+
+ body{
+    background-color: black;
+  }
+
+  img {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
+
+/*  common */
+ html, body{
+  line-height: 1.4;
+}
+
+header{
+  background-color: #424242;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+h2, h3{
+  font-size: 1.75rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 10px;
+}
+
+p {
+  padding: 5px;
+  margin: 10px;
+}
+
+form{
+  text-align: left;
+}
+
+.col-4 img {
+  grid-column: 1;
+  grid-row: 1 / -1;      /* from first line at start, to first line at end */
+  align-self: center;    /* vertical centering */
+  max-width: 300px;
+  min-height: 250px;
+  padding: 10px;
+}
+
+footer{
+  background-color: #424242;
+  min-height: 200px;
+}
