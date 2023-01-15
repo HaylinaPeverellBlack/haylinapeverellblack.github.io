@@ -1,12 +1,16 @@
 /* small screen, fall back to default */
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 576px){
 
  body{
-    background-color: black;
+    background-color: maroon;
   }
 
-  img {
-    max-width: 80%;
+.container{
+  max-width: 85%;
+}
+
+.col-sm-4  img {
+    max-width: 60%;;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -44,7 +48,7 @@ form{
   text-align: left;
 }
 
-.col-4 img {
+.col-sm-4 img {
   grid-column: 1;
   grid-row: 1 / -1;      /* from first line at start, to first line at end */
   align-self: center;    /* vertical centering */
