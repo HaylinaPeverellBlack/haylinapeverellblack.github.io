@@ -1,0 +1,26 @@
+h1{
+  font-family: Antenna Regular, sans-serif;
+  font-size: 3.5rem;
+  color: #03326f;
+}
+
+form{
+  margin-left: 32%;
+  text-align: left;
+}
+
+#buttons{
+  margin-left: 32%;
+  text-align: left;
+}
+
+.accordion{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.accordion p{
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+}
