@@ -1,100 +1,209 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <!-- Verplichte Metatags -->
+    <!-- Metatags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial scale=1">
-    <!-- Bootstrap-CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <style type="text/css" media="screen">
-    </style>
-    <title>Edwin Hubble</title>
+    <meta name="viewport" content="width=device-width, initial scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+    crossorigin="anonymous">
+
+    <!-- JavaScript & Jquery -->
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
+    <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js">
+    </script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <title>Mustang</title>
+
+    <script >
+      $(document).ready(function() {
+        $("#knop").click(function() {
+          var name = $("#idTekstveld1").val();
+          var brand = $("#idTekstveld2").val();
+          var model = $("#idTekstveld3").val();
+          window.alert(
+          "My name is " + name +
+          ", my favorite car brand is " + brand +
+          " and my favorite car model is " + model
+          );
+        })
+      })
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("#verberg").click(function() {
+          $("#blinktext").hide();
+          $("form").hide();
+        });
+        $("#toon").click(function() {
+          $("#blinktext").show();
+          $("form").show();
+        });
+      });
+    </script>
+    <script>
+      $(function() {
+        $("#accordion").accordion({
+          heightStyle: "content"
+        });
+      });
+    </script>
+
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="mb-auto">
-        <div>
-          <h3 class="float-md-start mb-0">Edwin Hubble</h3>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link" href="overmij.html">Who is</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-          </nav>
-        </div>
+
+  <body class="text-center text-white bg-secondary">
+    <div>
+      <header>
+        <h1>The Ford Mustang.</h1>
       </header>
-      <main class="px-3">
-        <h1>Introduction</h1>
-        <img
-          src="img/edwinhubble.jpg"
-          class="img-thumbnail"
-          alt="Edwin Hubble"
-          width="200">
-        <p class="lead container">At the same time Einstein was expanding man's view of the universe, American astronomer Edwin Hubble (1899–1953) calculated that a small blob in the sky existed outside of the Milky Way. Prior to his observations, the discussion over the size of the universe was divided as to whether or not only a single galaxy existed. Hubble went on to determine that the universe itself was expanding, a calculation which later came to be known as Hubble's law. Hubble's observations of the various galaxies allowed him to create a standard system of classification still used today.</p>
 
-        <!-- Grid with pictures x9 -->
+      <form>
+        What is your name?
+        <input type="text" id="idTekstveld1"><br><br>
+        What is your favorite car brand?
+        <input type="text" id="idTekstveld2"><br><br>
+        What is your favorite car model?
+        <input type="text" id="idTekstveld3"><br><br>
+        <input id="knop" type="button" name="knop" value="Press this button">
+      </form>
+      <br>
+      <div id="buttons">
+        <button id="verberg">Hide</button>
+        <button id="toon">show</button>
+        <p id="blinktext">With these buttons you can hide or show this text and the above form.</p>
+      </div>
 
-        <div class="container" style="background-color: slategray; padding: 10px;">
-          <div class="row">
-              <div class="col-sm-4 justify-content-start">
-                <img src="img/galaxy1.jpg" alt="galaxy1">
-              </div>
-              <div class="col-sm-4 justify-content-center">
-                <img src="img/galaxy3.jpg" alt="galaxy2">
-              </div>
-              <div class="col-sm-4 justify-content-end">
-                <img src="img/galaxy2.jpeg" alt="galaxy3">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4 justify-content-start">
-                <img src="img/galaxy4.jpg" alt="galaxy4">
-              </div>
-              <div class="col-sm-4 justify-content-center">
-                <img src="img/galaxy6.jpg" alt="galaxy5">
-              </div>
-              <div class="col-sm-4 justify-content-end">
-                <img src="img/galaxy5.jpg" alt="galaxy6">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4 justify-content-start">
-                <img src="img/galaxy7.jpg" alt="galaxy7">
-              </div>
-              <div class="col-sm-4 justify-content-center">
-                <img src="img/galaxy9.jpg" alt="galaxy8">
-              </div>
-              <div class="col-sm-4 justify-content-end">
-                <img src="img/galaxy8.jpg" alt="galaxy9">
-              </div>
-          </div>
+      <div class="accordion" id="accordion">
+        <h3>Ford Mustang</h3>
+        <div>
+          <figure>
+            <img src="img/fordmustang.jpg" alt="fordmustang" title="Ford Mustang Collection">
+            <figcaption>Ford Mustang Collection.</figcaption>
+          </figure>
+          <p>The Ford Mustang is a series of American automobiles manufactured by Ford. In continuous production since 1964, the Mustang is currently the longest-produced Ford car nameplate. Currently in its sixth generation, it is the fifth-best selling Ford car nameplate. The namesake of the "pony car" automobile segment, the Mustang was developed as a highly styled line of sporty coupes and convertibles derived from existing model lines, initially distinguished by "long hood, short deck" proportions.</p>
+          <p>Originally predicted to sell 100,000 vehicles yearly, the 1965 Mustang became the most successful vehicle launch since the 1927 Model A. Introduced on April 17, 1964 (16 days after the Plymouth Barracuda), over 400,000 units in its first year; the one-millionth Mustang was sold within two years of its launch. In August 2018, Ford produced the 10-millionth Mustang; matching the first 1965 Mustang, the vehicle was a 2019 Wimbledon White convertible with a V8 engine.</p>
+          <p>The success of the Mustang launch led to multiple competitors from other American manufacturers, including the Chevrolet Camaro and Pontiac Firebird[8] (1967), AMC Javelin (1968), and Dodge Challenger (1970). The Mustang also had an effect on designs of coupes worldwide, leading to the marketing of the Toyota Celica and Ford Capri in the United States (the latter, by Lincoln-Mercury). The Mercury Cougar was launched in 1967 as a unique-bodied higher-trim alternative to the Mustang; during the 1970s, it included more features and was marketed as a personal luxury car.</p>
+          <p>From 1965 until 2004, the Mustang shared chassis commonality with other Ford model lines, staying rear-wheel-drive throughout its production. From 1965 to 1973, the Mustang was derived from the 1960 Ford Falcon compact. From 1974 until 1978, the Mustang (denoted Mustang II) was a longer-wheelbase version of the Ford Pinto. From 1979 until 2004, the Mustang shared its Fox platform chassis with 14 other Ford vehicles (becoming the final one to use the Fox architecture). Since 2005, Ford has produced two generations of the Mustang, each using a distinct platform unique to the model line.</p>
+          <p>Through its production, multiple nameplates have been associated with the Ford Mustang series, including GT, Mach 1, Boss 302/429, Cobra (separate from Shelby Cobra), and Bullitt, along with "5.0" fender badging (denoting 4.9 L OHV or 5.0 L DOHC V8 engines).</p>
         </div>
-
-
-        <p class="nav-link lead">
-          <a href="contact.html"
-          class="btn btn-lg btn-secondary fw-bold border-white bg-green">
-          Contact</a>
-        </p>
-      </main>
+          <h3>First generation (1965-1973)</h3>
+        <div>
+          <figure>
+            <img src="img/mustang1965.jpg" alt="mustang1965" title="Mustang Fastback 1965">
+            <figcaption>Mustang Fastback, 1965.</figcaption>
+          </figure>
+          <p>Lee Iacocca's assistant general manager and chief engineer, Donald N. Frey was the head engineer for the T-5 project—supervising the overall development of the car in a record 18 months[19]—while Iacocca himself championed the project as Ford Division general manager. The T-5 prototype was a two-seat, mid-mounted engine roadster. This vehicle employed the German Ford Taunus V4 engine.
+          The original 1962 Ford Mustang I two-seater concept car had evolved into the 1963 Mustang II four-seater concept car which Ford used to pretest how the public would take interest in the first production Mustang. The 1963 Mustang II concept car was designed with a variation of the production model's front and rear ends with a roof that was 2.7 in (69 mm) lower. It was originally based on the platform of the second-generation North American Ford Falcon, a compact car. Gale Halderman's side view design is the basis for the first clay model.</p>
+          <p>Starting in 1969, to aid sales and continue the winning formula of the Mustang, a variety of new performance and decorative options became available, including functional (and non-functional) air scoops, cable and pin hood tie-downs, and both wing and chin spoilers. Additionally, a variety of performance packages were introduced that included the Mach 1, the Boss 302, and Boss 429. The two Boss models were to homologate the engines for racing. The 1969 Mustang was the last year for the GT option (although it did return on the third-generation Mustang for the 1982 model year). A fourth model available only as a hardtop, the Grandé, saw success starting in 1969 with its soft ride, "luxurious" trim, 55 pounds (25 kg) of extra sound deadening, and simulated wood trim.</p>
+        </div>
+          <h3>Second generation (1974-1978)</h3>
+        <div>
+          <!-- img 1974 fastback -->
+          <figure>
+            <img src="img/mustang1974.jpg" alt="mustang1974" title="Mustang Fastback 1974">
+            <figcaption>Mustang Fastback, 1974.</figcaption>
+          </figure>
+          <p>Iacocca, who had been one of the forces behind the original Mustang, became president of Ford Motor Company in 1970, and ordered a smaller, more fuel-efficient Mustang for 1974. Initially, it was to be based on the Ford Maverick, but ultimately was based on the Ford Pinto subcompact. The new model, called the "Mustang II", was introduced on September 21, 1973, two months before the first 1973 oil crisis, and its reduced size allowed it to compete against successful imported sports coupes such as the Japanese Datsun 240Z, Toyota Celica and the European Ford Capri[45] (then Ford-built in Germany and Britain, sold in U.S. by Mercury as a captive import car).</p>
+          <p>Not only was it smaller than the original car, but it was also heavier, owing to the addition of equipment needed to meet new U.S. emission and safety regulations. Performance was reduced, and despite the car's new handling and engineering features the galloping mustang emblem "became a less muscular steed that seemed to be cantering".</p>
+          <p>Engines for the 1974 models included the venerable 2.3 L I4 from the Pinto and the 2.8 L Cologne V6 from the Mercury Capri. The 1975 model year reintroduced the 302 cu in (4.9 L) Windsor V8 that was only available with the C-4 automatic transmission, power brakes, and power steering. This continued through production's end in 1978. Other transmissions were the RAD four-speed with unique gearing for all three engines, and the C-3 automatic behind the 2.3 L and 2.8 L. The "5.0 L" marketing designation was not applied until the 1978 King Cobra model. All 302 cu in (4.9 L)-equipped Mustang IIs, except the King Cobras, received updated versions of the classic Ford "V8" emblem on each front fender.</p>
+          <p>The car was available in coupe and hatchback versions, including a "luxury" Ghia model designed by Ford's recently acquired Ghia of Italy. The coupe was marketed as a "hardtop" but actually had a thin "B" pillar and rear quarter windows that did not roll down. All Mustangs in this generation did feature frameless door glass, however. The "Ghia" featured a thickly padded vinyl roof and smaller rear quarter windows, giving a more formal look. 1974 models were: hardtop, hatchback, Mach 1, and Ghia. Changes introduced for 1975 included the availability of an "MPG" model which had a different rear axle ratio for better fuel economy. 1976 added the "Stallion" trim package. The Mach 1 remained through the life cycle 1974–1978. Other changes in appearance and performance came with a "Cobra II" version in 1976–1978 and a "King Cobra" in 1978 of which around 4,972 were built. The 1977–1978 hatchback models in all trim levels were now available with the T-top roof option, which included a leatherette storage bag that clipped to the top of the spare tire hump.</p>
+        </div>
+          <h3>Third generation (1979-1993)</h3>
+        <div>
+          <!-- img 1979 cobra -->
+          <figure>
+            <img src="img/mustang1979.jpg" alt="mustang1979" title="Mustang Cobra 1979">
+            <figcaption>Mustang Cobra, 1979.</figcaption>
+          </figure>
+          <p>The 1979 Mustang was based on the larger Fox platform (initially developed for the 1978 Ford Fairmont and Mercury Zephyr). The larger body with an increased wheelbase yielded more interior space for four passengers, especially in the back seat, as well as a larger capacity trunk and a bigger engine bay.</p>
+          <p>Body styles included a coupe (or notchback), hatchback, and convertible. Available trim levels included an unnamed base model (1979–1981), Ghia (1979–1981), Cobra (1979–1981, 1993), L (1982–1984), GL (1982–1983), GLX (1982–1983), GT (1982–1993), Turbo GT (1983–1984), LX (1984–1993), GT-350 20th anniversary edition (1984), SVO (1984–1986) and Cobra R (1993).</p>
+          <p>Engines and drivetrains carried over from the Mustang II including the 2.3 L I4, 2.8 L V6, and 4.9 L V8 engines. A troublesome 2.3 L turbocharged I4 was available during initial production startup and then reappeared after undergoing improvements for the mid-year introduction of the 1983 turbo GT. The 2.8 L V6, in short supply, was replaced with a 3.3 L I6 engine during the 1979-model year. That engine was ultimately replaced with a new 3.8 L V6 for 1983. The 302 cu in (4.9 L) V8 was suspended after 1979 and replaced with a smaller, 4.2 L V8 which was dropped in favor of the high output 302 cu in (4.9 L) V8 for 1982.</p>
+          <p>From 1979 to 1986, the Capri was domestically produced as a Mercury-badged version of the Mustang, using a few of its own styling cues. The third-generation Mustang had two different front-end styles. From 1979 to 1986, the front end was angled back using four rectangular headlights, known by enthusiasts as "four eyes". The front end was restyled for 1987 to 1993 model years to reflect the contemporary, rounded-off "aero" style of the Ford Taurus using flush-composite headlamps and a smooth grille-less nose.</p>
+          <p>The Mustang was selected as the 1979 Official Indianapolis 500 Pace Car with replicas sold to the public. Its special body-appearance parts were adapted by the Cobra package for 1980–81. 1982 marked the return of the Mustang GT (replacing the Cobra) which used a specially-modified high-output 302 cu in (4.9 L) engine. 1983 saw the return of the Mustang convertible after a nine-year absence. The front fascias of all Mustangs were restyled, featuring new grilles, sporting "blue oval" Ford emblems for the first time. 1984 introduced the high-performance Mustang SVO, which featured a 2.3 L turbocharged and intercooled four-cylinder engine and unique bodywork. The Mustang celebrated its 20th anniversary with a special GT350 model in white with red interior and red lower-bodyside rocker stripes. 1985 Mustangs received another front-fascia restyle.</p>
+          <p>In response to poor sales and escalating fuel prices during the early 1980s, a new Mustang was in development. It was to be a variant of the Mazda MX-6 assembled at AutoAlliance International in Flat Rock, Michigan. Enthusiasts wrote to Ford objecting to the proposed change to a front-wheel drive, Japanese-designed Mustang without a V8 option. The result was the continuation of the existing Mustang while the Mazda MX-6 variant had a last-minute name change from Mustang to Probe and was released as a 1989 model. The Mustang received a major restyling for 1987, including the interior, which carried it through the end of the 1993 model year. Under the newly established Ford SVT division, the 1993 Ford Mustang SVT Cobra and Cobra R were added as special, high-performance models.</p>
+        </div>
+          <h3>Fourth generation (1994-2004)</h3>
+        <div>
+          <!-- img 1994 gt convertible -->
+          <figure>
+            <img src="img/mustang1994.jpg" alt="mustang1994" title="Mustang GT Convertible 1994">
+            <figcaption>Mustang GT Convertible, 1994.</figcaption>
+          </figure>
+          <p>In November 1993, the Mustang debuted its first major redesign in fifteen years. Code-named "SN-95" by the automaker, it was based on an updated version of the rear-wheel drive Fox platform called "Fox-4." The new styling by Patrick Schiavone incorporated several styling cues from earlier Mustangs. For the first time since its introduction 1964, a notchback coupe model was not available. The door windows on the coupe were once again frameless; however, the car had a fixed "B" pillar and rear windows.</p>
+          <p>The base model came with a 3.8 OHV V6 3.8 L (232 cu in) engine rated at 145 bhp (108 kW) in 1994 and 1995, or 150 bhp (110 kW) (1996–1998), and was mated to a standard 5-speed manual transmission or optional 4-speed automatic. Though initially used in the 1994 and 1995 Mustang GTS, GT and Cobra, Ford retired the 302 cid pushrod small-block V8 after nearly 30 years of use, replacing it with the newer Modular 4.6 L (281 cu in) SOHC V8 in the 1996 Mustang GT. The 4.6 L V8 was initially rated at 215 bhp (160 kW), 1996–1997, but was later increased to 225 bhp (168 kW) in 1998.</p>
+          <p>For 1999, the Mustang was reskinned with Ford's New Edge styling theme with sharper contours, larger wheel arches, and creases in its bodywork, but its basic proportions, interior design, and chassis remained the same as the previous model. The Mustang's powertrains were carried over for 1999, but benefited from new improvements. The standard 3.8 L V6 had a new split-port induction system, and was rated at 190 bhp (140 kW) 1999–2000, while the Mustang GT's 4.6 L V8 saw an increase in output to 260 bhp (190 kW) (1999–2004), due to a new head design and other enhancements. In 2001, the 3.8 L was increased to 193 bhp. In 2004, a 3.9 L variant of the Essex engine replaced the standard 3.8 L mid year with an increase of 3 ft⋅lb (4 N⋅m) of torque as well as NVH improvements. There were also three alternate models offered in this generation: the 2001 Bullitt, the 2003 and 2004 Mach 1, as well as the 320 bhp (240 kW) 1999 and 2001, and 390 bhp (290 kW) 2003 and 2004 Cobra.</p>
+        </div>
+          <h3>Fifth generation (2005-2014)</h3>
+        <div>
+          <!-- img 2005 convertible / eleanor cervini -->
+          <figure>
+            <img src="img/mustang2005.jpg" alt="mustang2005" title="Mustang Convertible 2005">
+            <figcaption>Mustang Convertible, 2005.</figcaption>
+          </figure>
+          <p>Ford introduced a re-designed 2005 model year Mustang at the 2004 North American International Auto Show, codenamed "S-197", that was based on the new D2C platform. Developed under the direction of chief engineer Hau Thai-Tang, a veteran engineer for Ford's IndyCar program under Mario Andretti, and exterior styling designer Sid Ramnarace, the fifth-generation Mustang's styling echoes the fastback Mustang models of the late-1960s. Ford's senior vice president of design, J Mays, called it "retro-futurism". The fifth-generation Mustang was manufactured at the Flat Rock Assembly Plant in Flat Rock, Michigan.</p>
+          <p>For the 2005 to 2010 production years, the base model was powered by a 210 hp (157 kW; 213 PS) cast-iron block 4.0 L SOHC V6, while the GT used an aluminum block 4.6 L SOHC three-valve Modular V8 with variable camshaft timing (VCT) that produced 300 hp (224 kW; 304 PS). Base models had Tremec T5 five-speed manual transmissions with Ford's 5R55S five-speed automatic being optional. Automatic GTs also featured this, but manual GTs had the Tremec TR-3650 five-speeds.</p>
+          <p>The 2010 model year Mustang was released in the spring of 2009 with a redesigned exterior — which included sequential LED taillights — and a reduced drag coefficient of 4% on base models and 7% on GT models. The engine for base Mustangs remained unchanged, while the GT's 4.6 L V8 was revised resulting in 315 hp (235 kW; 319 PS) at 6,000 rpm and 325 lb⋅ft (441 N⋅m) of torque at 4,255 rpm. Other mechanical features included new spring rates and dampers, traction and stability control system standard on all models, and new wheel sizes. </p>
+          <p>Engines were revised for 2011, and transmission options included the Getrag-Ford MT82 six-speed manual or the 6R80 six-speed automatic based on the ZF 6HP26 transmission, licensed for production by Ford. Electric power steering replaced the conventional hydraulic version. A new 3.72 L (227 cu in) aluminum block V6 engine weighed 40 lb (18 kg) less than the previous version. With 24 valves and twin independent variable cam timing (TiVCT), it produced 305 hp (227 kW; 309 PS) and 280 lb⋅ft (380 N⋅m) of torque. The 3.7 L engine came with a new dual exhaust. GT models included 32-valve 5.0 L engine (4,951cc or 302.13 cu. in) (also referred to as the "Coyote") producing 412 hp and 390 ft-lbs of torque. Brembo brakes were optional along with 19-inch wheels and performance tires.</p>
+          <p>The Shelby GT500's 5.4 L supercharged V8 block is made of aluminum making it 102 lb (46 kg) lighter than the iron units in previous years. It was rated at 550 hp (410 kW; 558 PS) and 510 lb⋅ft (690 N⋅m) of torque.</p>
+          <p>For 2012, a new Mustang Boss 302 version was introduced. The engine had 444 hp (331 kW; 450 PS) and 380 lb⋅ft (520 N⋅m) of torque. A "Laguna Seca" edition was also available, which offered additional body bracing, the replacement of the rear seat with a steel "X-brace" for stiffening, and other powertrain and handling enhancements.</p>
+          <p>In the second quarter of 2012, Ford launched an update to the Mustang line as an early 2013 model. The Shelby GT500 had a new 5.8 L supercharged V8 producing 662 hp (494 kW; 671 PS). The Shelby and Boss engines came with a six-speed manual transmission. The GT and V6 models revised styling incorporated the grille and air intakes from the 2010–2012 GT500s. The decklid received a black cosmetic panel on all trim levels. The GT's 5.0 liter V8 gained eight horsepower from 412 hp (307 kW; 418 PS) to 420 hp (313 kW; 426 PS).</p>
+          <figure>
+            <img src="img/mustang2005_2.jpg" alt="mustang2005_2" title="Mustang Eleanor Cervini">
+            <figcaption>Mustang Eleanor Cervini, 2005.</figcaption>
+          </figure>
+        </div>
+          <h3>Sixth generation (2015-present)</h3>
+        <div>
+          <!-- img 2015 gt-->
+          <figure>
+            <img src="img/mustang2015.jpg" alt="mustang2015" title="Mustang GT 2015">
+            <figcaption>Mustang GT, 2015.</figcaption>
+          </figure>
+          <p>The sixth generation Mustang was unveiled on December 5, 2013, in Dearborn, Michigan; New York, New York; Los Angeles, California; Barcelona, Spain; Shanghai, China; and Sydney, Australia.[71] The internal project code name is S-550.</p>
+          <p>Changes include a body widened by 1.5 inches and lowered 1.4 inches, a trapezoidal grille, and a 2.75-inch lower decklid, as well as new colors. The passenger volume is increased to 84.5 cubic feet, the wheelbase is still 8 ft. 11.1 in. (107.1 in.), and three engine options are available: a newly developed 2.3 L EcoBoost 310 hp four-cylinder introduced to reach high tariff global markets like China, 3.7 L 300 hp V6, or 5.0 L Coyote 435 hp V8, with either a Getrag six-speed manual or six-speed automatic transmission with paddle shifters.</p>
+          <p>A new independent rear suspension (IRS) system was developed specifically for the new model. It also became the first version factory designed as a right hand drive export model to be sold overseas through Ford new car dealerships in right hand drive markets. During this model year, left hand drive versions were expanded to new export markets.</p>
+          <p>The 2018 model year Mustang was released in the third quarter of 2017 in North America and by 2018 globally. It featured a minor redesign to the exterior. The 2018 Mustang engine line up was revised. The 3.7 L V6 was dropped and the 2.3 L I4 Ecoboost (direct-injection turbocharged) engine now serves as the base power plant for the Mustang, producing 310 hp (231 kW) and 350 lb⋅ft (475 N⋅m) of torque when using 93-octane fuel. The 5.0 L V8 gets a power increase to 460 hp (343 kW) and 420 lb⋅ft (569 N⋅m) of torque. The automatic transmission in both engines is now a ten-speed Ford 10R80. In January 2018, Ford displayed a prototype of the special edition 2018 Bullitt model, to be released in the summer; this vehicle commemorated the 50th anniversary of the movie Bullitt that helped attract interest in the marque.</p>
+          <p>For the 2019 model year, Ford revised many components on the 2019 Shelby GT350 including stickier Michelin Pilot Sport Cup 2 tires along with steering and suspension components.</p>
+          <p>The 2020 model year saw the re-introduction of the GT500. The 2020 GT500 includes a hand-built 5.2-liter "Predator" aluminum-alloy V8 engine with a 2.65-liter roots-type supercharger. The Shelby GT500 produces 760 hp (567 kW; 771 PS) and 625 lb⋅ft (847 N⋅m) of torque. The GT350 was discontinued at the end of the 2020 model year.</p>
+          <p>For the 2021 model year, Ford re-introduced the Mach 1 after a 17-year hiatus. The 2021 Mach 1 utilizes the current Coyote 5.0 L engine with GT350 parts, including the intake manifold, increasing performance to 480 hp (358 kW) at 7,000 rpm and 420 lb⋅ft (569 N⋅m) at 4,600 rpm in addition to utilizing the GT350's lightweight Tremec six-speed manual transmission, oil-filter adapter, engine oil cooler, and front and rear subframe. The Mach 1 also utilizes parts from the GT500, including the rear axle cooling system, rear toe link, and rear diffuser.</p>
+        </div>
+          <h3>Seventh generation (2024)</h3>
+        <div>
+          <!-- img 2024 gt -->
+          <figure>
+            <img src="img/mustang2024.jpg" alt="mustang2024" title="Mustang GT 2024">
+            <figcaption>Mustang GT, 2024.</figcaption>
+          </figure>
+          <p>Ford introduced the seventh-generation Mustang at the 2022 Detroit Auto Show on September 14, in a special event called "The Stampede".</p>
+        </div>
+          <h3>Mach-E (2019-present)</h3>
+        <div>
+          <figure>
+            <img src="img/mustangmache.jpg" alt="mustangmache" title="Mustang Mach-E">
+            <figcaption>Mustang Mach-E.</figcaption>
+          </figure>
+          <p>On November 17, 2019, Ford announced the Ford Mustang Mach-E. Unrelated to any of the pony car Mustang versions, it is an electric crossover with rear-wheel and all-wheel drive. It has 210–375 miles (340–605 km) of range and an updated Ford Sync system with a 15.5 inch display. The Mustang Mach-E comes in several different trims including First Edition, Select, Premium, California Route 1, and GT. The Mach-E Mustang also offers "regular and extended-range batteries".</p>
+        </div>
+      </div>
+      <noscript>
+        Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+      </noscript>
 
       <footer class="mt-auto text-white-50">
         <p>For more information, look at
           <a href="https://en.wikipedia.org/wiki/Edwin_Hubble" class="text-white" target="_blank">Wikipedia&#169;</a>
         </p>
-      </p>
-      <p>&copy; Copyright 2023 <a href="https://en.wikipedia.org/wiki/Edwin_Hubble" class="text-white" target="_blank">Wikipedia</a> & <a href="https://www.space.com/16095-famous-astronomers.html" class="text-white" target="_blank">Space.com</a>
-      </p>
+        <p>&copy; Copyright 2023 <a href="https://en.wikipedia.org/wiki/Ford_Mustang" class="text-white" target="_blank">Wikipedia</a> & <a href="https://www.ford.com/cars/mustang/" class="text-white" target="_blank">Ford</a>
+        </p>
       </footer>
     </div>
 
-    <!-- Bootstrap-JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous">
-    </script>
   </body>
 </html>
