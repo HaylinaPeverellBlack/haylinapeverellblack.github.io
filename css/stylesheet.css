@@ -1,5 +1,43 @@
+@media only screen and (max-width: 768px){
+html,
+ body{
+    width: 100%;
+    line-height: 1.2;
+  }
+
+  h1{
+    font-family: sans-serif;
+    color: #03326f;
+  }
+
+  img {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+
+  .accordion{
+    width: 100%;
+    text-align: left;
+  }
+
+  form{
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+
+html,
+body {
+  height: 100%;
+  line-height: 1.4;
+}
+
 h1{
-  font-family: Antenna Regular, sans-serif;
+  font-family: sans-serif;
   font-size: 3.5rem;
   color: #03326f;
 }
